@@ -1,0 +1,154 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width:768px){
+    .check{
+        width: auto;
+        margin-left: 7rem;
+        margin-bottom: 0;
+        position: absolute;
+        border: 1px solid red;
+    }
+    .heading{
+        margin-left: 8rem;
+    }
+    .loginbox{
+        margin-top: 30px;
+    }
+}
+.loginbox{
+    width: 320px;
+    height: 360px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 50px 30px;
+}
+.check{
+    width: 250px;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.check p{
+    text-align: center;
+    color: red;
+}
+.check i{
+    text-align: right;
+    color: red;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginbox button{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.loginbox button
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginbox button:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.loginbox a:hover
+{
+    color: #ffc107;
+}
+.heading{
+    text-shadow: #000;
+    text-transform: capitalize;
+    letter-spacing: .67rem;
+}
+.check{
+    visibility: hidden;
+}
+.check.error p{
+    visibility: visible;
+}
+.check.error i{
+    visibility: visible;
+}
+.check.error small{
+    visibility: visible;
+}
+.loginbox.error{
+    margin-top: 20px;
+}
+@media screen and (min-width: 768px){
+    .check{
+        margin-left: 25rem;
+    }
+    .heading{
+        margin-left: 25rem;
+        margin-bottom: 2px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .check{
+        margin-left: 40rem;
+        border: 1px solid red;
+    }
+    .heading{
+        margin-left: 40rem;
+        margin-bottom: 3px;
+    }
+}
